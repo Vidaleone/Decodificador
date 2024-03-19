@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="news-cycle-bold"><span class="alura-text">Alura</span> CriptoCode</h1>
+    </header>
+
+    <div class="container">
+        <div class="container-texto">
+            <textarea id="input-texto" class="text-input news-cycle-regular" placeholder="Digite o texto aqui"></textarea>
+            <textarea id="output-texto" class="text-output viga-regular" readonly></textarea>
+        </div>
+        <div class="container-botoes">
+            <div class="botoes-div">
+                <button id="btn-criptografar" class="btn-criptografar ativo viga-regular">Criptografar</button>
+                <button id="btn-descriptografar" class="btn-descriptografar news-cycle-regular">Descriptografar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="botoes-adicionais">
+        <button id="btn-copiar" class="btn-copiar">
+            <img src="./assets/iconecopiar.png" alt="Copiar">
+        </button>
+        <button id="btn-sobre" class="btn-sobre">
+            <img src="assets/iconesobre.png" alt="Sobre" class="btn-sobre-img">
+        </button>
+    </div>
+
+    <footer class="footer news-cycle-regular">
+        Desenvolvido por <span class="nome-desenvolvedor">Richard Bryan</span>
+    </footer>
+
+    <!-- Modal para mensagens -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

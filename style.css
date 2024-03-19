@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Shanti&family=Syne:wght@400..800&display=swap');
+
+body {
+    background: url('assets/backgroundhacker.avif') center/cover #040D12;
+    color: #93B1A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: auto;
+    padding: 50px;
+    background-color: #232D3F;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 56px;
+    font-weight: bold;
+    font-family: 'News Cycle', sans-serif;
+    color: #FFFFFF;
+}
+
+.alura-text {
+    color: #0062ff;
+}
+
+.text-input {
+    width: calc(100% - 20px);
+    height: 150px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #5C8374;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+    background-color: #b0b0b0;
+    color: white;
+    cursor: text;
+    font-family: 'Shanti', sans-serif;
+    font-size:17px;
+}
+
+.text-output {
+    width: calc(100% - 20px);
+    height: 150px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #5C8374;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+    background-color: #b0b0b0;
+    color: white;
+    cursor: text;
+    font-family: 'Belanosima', sans-serif;
+    font-size:20px;
+}
+
+.text-input::placeholder {
+    color: white;
+}
+
+.text-input:hover,
+.text-output:hover {
+    cursor: text;
+}
+
+.botoes-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-criptografar {
+    margin-right: 30px;
+    background-color: #FFA500;
+    color: white;
+}
+
+.btn-descriptografar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-copiar,
+.btn-sobre {
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-sobre {
+    background-color: #008CBA;
+    margin-left: 300px;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-criptografar:hover,
+.btn-descriptografar:hover,
+.btn-copiar:hover,
+.btn-sobre:hover {
+    filter: brightness(0.9);
+}
+
+.btn-copiar img,
+.btn-sobre img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+button:active {
+    filter: brightness(0.8);
+}
+
+.ativo {
+    filter: brightness(0.8);
+}
+
+.footer {
+    font-family: 'News Cycle', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #232D3F;
+    color: #fbfbfb;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #454545;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    font-family:"Syne", sans-serif;
+    font-size:20px;
+    color:orange;
+}
+
+.close {
+    color: #fff8f8;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-message {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffc507;
+    margin-top: 20px;
+}
+
+.btn-sobre {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.nome-desenvolvedor {
+    color: rgb(93, 161, 254);
+    font-weight: bold;
+}
